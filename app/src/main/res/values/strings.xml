@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">AgroStar</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_label">Search</string>
+    <string name="search_hint">Search Names</string>
+
+
+    <string-array name="list_items">
+        <item >PRODUCT 1</item>
+        <item >PRODUCT 2</item>
+        <item >PRODUCT 3</item>
+        <item >PRODUCT 4</item>
+        <item>PRODUCT 5</item>
+        <item >PRODUCT 6</item>
+        <item>PRODUCT 7</item>
+        <item >PRODUCT 8</item>
+        <item>PRODUCT 9</item>
+        <item>PRODUCT 10</item>
+    </string-array>
+
+    <string-array name="list_items_hindi">
+        <item >उत्पाद 1</item>
+        <item >उत्पाद 2</item>
+        <item >उत्पाद 3</item>
+        <item >उत्पाद 4</item>
+        <item>उत्पाद 5</item>
+        <item >उत्पाद 6</item>
+        <item>उत्पाद 7</item>
+        <item >उत्पाद 8</item>
+        <item>उत्पाद 9</item>
+        <item>उत्पाद 10</item>
+    </string-array>
+
+
+    <array name="listicons">
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/orange</item>
+    </array>
+
+
+    <string-array name="list_items_price">
+        <item >Price 1</item>
+        <item >Price 2</item>
+        <item >Price 3</item>
+        <item >Price 4</item>
+        <item>Price 5</item>
+        <item>Price 6</item>
+        <item>Price 7</item>
+        <item >Price 8</item>
+        <item>Price 9</item>
+        <item>Price 10</item>
+    </string-array>
+
+    <string-array name="list_items_price_hindi">
+        <item >मूल्य 1</item>
+        <item >मूल्य 2</item>
+        <item >मूल्य 3</item>
+        <item >मूल्य 4</item>
+        <item>मूल्य 5</item>
+        <item>मूल्य 6</item>
+        <item>मूल्य 7</item>
+        <item >मूल्य 8</item>
+        <item>मूल्य 9</item>
+        <item>मूल्य 10</item>
+    </string-array>
+
+
+</resources>
