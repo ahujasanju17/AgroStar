@@ -75,27 +75,17 @@ public class MainActivityHindi extends AppCompatActivity implements SearchView.O
 
         nameList = new ArrayList<String>();
 
-        //for simplicity we will add the same name for 20 times to populate the nameList view
         for (int i = 0; i < 10; i++) {
             nameList.add(Titles[i]);
         }
 
-        //relate the listView from java to the one created in xml
         myList = (ListView) findViewById(R.id.list);
 
-        //show the ListView on the screen
-        // The adapter MyCustomAdapter is responsible for maintaining the data backing this nameList and for producing
-        // a view to represent an item in that data set.
         defaultAdapter = new MyCustomAdapter(getApplicationContext(), items);
         myList.setAdapter(defaultAdapter);
 
-        //prepare the SearchView
         searchView = (SearchView) toolbar.findViewById(R.id.search);
 
-        //Sets the default or resting state of the search field. If true, a single search icon is shown by default and
-        // expands to show the text field and other buttons when pressed. Also, if the default state is iconified, then it
-        // collapses to that state when the close button is pressed. Changes to this property will take effect immediately.
-        //The default value is true.
         searchView.setIconifiedByDefault(false);
 
         searchView.setOnQueryTextListener(this);
@@ -104,11 +94,9 @@ public class MainActivityHindi extends AppCompatActivity implements SearchView.O
         mDbHelper = new SearchHelper(this);
         mDbHelper.open();
 
-        //Clear all names
         mDbHelper.deleteAllNames();
 
 
-        // Create the list of names which will be displayed on search
         for (String name : nameList) {
             mDbHelper.createList(name);
         }
@@ -144,7 +132,6 @@ public class MainActivityHindi extends AppCompatActivity implements SearchView.O
                 return true;
 
         }
-        //noinspection SimplifiableIfStatement
 
         return super.onOptionsItemSelected(item);
     }
@@ -195,7 +182,6 @@ public class MainActivityHindi extends AppCompatActivity implements SearchView.O
 
             String[] from = new String[] {SearchHelper.COLUMN_NAME};
 
-            // Specify the view where we want the results to go
             int[] to = new int[] {R.id.search_result_text_view};
 
             // Create a simple cursor adapter to keep the search data
